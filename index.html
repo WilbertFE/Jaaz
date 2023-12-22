@@ -3,29 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple E-Commerce | JLife</title>
+    <title>Simple E-Commerce | JaaS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    },
-                    fontFamily: {
-                        'Inter': 'Inter, sans-serif',
-                    }
-                }
-            }
-            }
-      </script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="sm:bg-red-400 md:bg-green-400 lg:bg-purple-400">
 
-    <div id="container" class="container font-Inter min-h-[1000px] bg-slate-700 mx-auto overflow-hidden">
+    <div id="container" class="container font-Inter bg-slate-700 mx-auto overflow-hidden">
 
         <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 text-slate-100 flex items-center shadow-lg">
             <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10">JasS</h1>
@@ -36,23 +22,20 @@
                 <h2><a href="#">Contact</a></h2>
             </div>
             <div id="menu-toggle" class="flex flex-col justify-between h-5 sm:hidden z-10">
-                <span class="block w-7 h-[3px] bg-slate-200 rounded-sm origin-top-left spans transition-all duration-500"></span>
-                <span class="block w-7 h-[3px] bg-slate-200 rounded-sm spans transition-all duration-500"></span>
-                <span class="block w-7 h-[3px] bg-slate-200 rounded-sm origin-bottom-left spans transition-all duration-500"></span>
+                <span class="toggle-span origin-top-left spans bg-slate-200"></span>
+                <span class="toggle-span spans bg-slate-200"></span>
+                <span class="toggle-span origin-bottom-left spans bg-slate-200"></span>
             </div>
         </div>
+
         <!--  -->
         <div id="home" class="w-full text-slate-100 capitalize">
-            <div id="bg-container" class="w-full h-screen bg-[url(assets/img/1.jpg)] bg-cover bg-center sm:hidden">
+            <div id="bg-container" class="w-full h-screen bg-cover bg-center sm:hidden" style="background-image: url(assets/img/1.jpg);">
                 <div class="w-full h-full bg-gradient-to-b from-black/30 from-100%">
-                    <div class="w-full p-5 h-full">
-                        <h1 class="mt-24 text-3xl font-bold text-center">Enhance your look with our latest jackets</h1>
-                        <h2 class="text-center lowercase">suitable for city adventures</h2>
-                        <div class="w-full mt-10 flex flex-wrap justify-center">
-                            <div class="bg-[url(assets/img/2.jpg)] w-[200px] h-[150px] m-2 bg-cover bg-center rounded-lg shadow-lg"></div>
-                            <div class="bg-[url(assets/img/3.jpg)] w-[200px] h-[150px] m-2 bg-cover bg-center rounded-lg shadow-lg"></div>
-                            <div class="bg-[url(assets/img/4.jpg)] w-[200px] h-[150px] m-2 bg-cover bg-center rounded-lg shadow-lg"></div>
-                        </div>
+                    <div class="w-full p-5 h-full flex flex-col justify-center">
+                        <h1 class="mt-28 text-4xl font-bold text-center">Enhance your look with our latest jackets</h1>
+                        <h2 class="text-center lowercase text-lg font-semibold text-slate-300 tracking-tighter">suitable for city adventures</h2>
+                        <button class="px-4 py-2 bg-slate-800 mx-auto block rounded-lg shadow-lg tracking-wider font-bold mt-4">Check</button>
                     </div>
                 </div>
             </div>
@@ -60,6 +43,7 @@
 
     </div>
 
+    <div class="mb-96"></div>
 
 <script src="main.js"></script>
 </body>

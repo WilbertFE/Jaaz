@@ -14,6 +14,7 @@ toggle.addEventListener('click', function(){
     spans[2].classList.toggle('-translate-x-[1px]');
     spans[1].classList.toggle('opacity-0');
     for(let i=0; i<spans.length; i++){
+        spans[i].classList.toggle('bg-slate-200');
         spans[i].classList.toggle('bg-red-600');
     }
     setTimeout(() => {

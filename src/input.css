@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .toggle-span{
+        @apply block w-7 h-[3px] rounded-sm transition-all duration-500;
+    }
+}
