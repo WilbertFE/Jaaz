@@ -23,7 +23,28 @@
             }
       </script>
 </head>
-<body>
-    
+<body class="sm:bg-red-400 md:bg-green-400 lg:bg-purple-400">
+
+    <div id="container" class="container font-Inter min-h-[1000px] bg-slate-700 mx-auto overflow-hidden">
+
+        <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 text-slate-100 flex items-center shadow-lg">
+            <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10">Jasz</h1>
+            <div id="navigasi" class="transition-all duration-1000 opacity-0 font-semibold flex absolute top-0 -right-full h-screen w-4/5 bg-slate-800 flex-col items-center justify-evenly sm:static sm:w-auto sm:h-auto sm:bg-transparent sm:flex-1 sm:justify-around sm:flex-row sm:text-sm sm:opacity-100 sm:transition-none">
+                <h2><a href="#">Home</a></h2>
+                <h2><a href="#">Products</a></h2>
+                <h2><a href="#">About</a></h2>
+                <h2><a href="#">Contact</a></h2>
+            </div>
+            <div id="menu-toggle" class="flex flex-col justify-between h-5 sm:hidden z-10">
+                <span class="block w-7 h-[3px] bg-slate-200 rounded-sm origin-top-left spans transition-all duration-500"></span>
+                <span class="block w-7 h-[3px] bg-slate-200 rounded-sm spans transition-all duration-500"></span>
+                <span class="block w-7 h-[3px] bg-slate-200 rounded-sm origin-bottom-left spans transition-all duration-500"></span>
+            </div>
+        </div>
+
+    </div>
+
+
+<script src="main.js"></script>
 </body>
 </html>
