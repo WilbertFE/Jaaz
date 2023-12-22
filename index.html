@@ -11,7 +11,7 @@
 </head>
 <body class="sm:bg-red-400 md:bg-green-400 lg:bg-purple-400">
 
-    <div id="container" class="container font-Inter bg-slate-700 mx-auto overflow-hidden">
+    <div id="container" class="container font-Inter bg-slate-700 mx-auto overflow-hidden min-h-[1000px]">
 
         <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 text-slate-100 flex items-center shadow-lg">
             <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10">JasS</h1>
@@ -33,14 +33,31 @@
             <div id="bg-container" class="w-full h-screen bg-cover bg-center sm:hidden" style="background-image: url(assets/img/1.jpg);">
                 <div class="w-full h-full bg-gradient-to-b from-black/30 from-100%">
                     <div class="w-full p-5 h-full flex flex-col justify-center">
-                        <h1 class="mt-28 text-4xl font-bold text-center">Enhance your look with our latest jackets</h1>
-                        <h2 class="text-center lowercase text-lg font-semibold text-slate-300 tracking-tighter">suitable for city adventures</h2>
-                        <button class="px-4 py-2 bg-slate-800 mx-auto block rounded-lg shadow-lg tracking-wider font-bold mt-4">Check</button>
+                        <h1 class="mt-28 text-3xl font-bold text-center">Enhance your look with our latest jackets</h1>
+                        <h2 class="text-sm text-center lowercase font-semibold text-slate-300 tracking-tighter">suitable for city adventures</h2>
+                        <button class="px-4 py-2 bg-slate-800 mx-auto block rounded-lg shadow-lg tracking-wider font-bold mt-4 hover:bg-slate-900">Check</button>
                     </div>
                 </div>
             </div>
         </div>
-
+        <!--  -->
+        <div id="products" class="w-full text-slate-100 capitalize text-center mt-20 p-3">
+            <h1 class="text-4xl font-black mb-4">Our Products</h1>
+            <div>
+                <h1 class="text-xl font-semibold mb-2">Main Products</h1>
+                <div class="flex items-center">
+                    <div class="w-12 text-4xl cursor-pointer mr-1">&#8592;</div>
+                    <div class="h-40 bg-red-200 flex-1 rounded-lg shadow-xl bg-cover bg-center" style="background-image: url(assets/img/2.jpg);"></div>
+                    <div class="max-w-12 text-4xl cursor-pointer ml-1"> &#8594;</div>
+                </div>
+                <div class="flex justify-center mt-2 flex-wrap">
+                    <div class="w-2 h-2 bg-black rounded-full m-1"></div>
+                    <div class="w-2 h-2 bg-white rounded-full m-1"></div>
+                    <div class="w-2 h-2 bg-white rounded-full m-1"></div>
+                    <div class="w-full text-3xl"><span class="text-green-600">$</span>20</div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="mb-96"></div>
