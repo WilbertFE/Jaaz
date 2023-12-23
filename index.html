@@ -11,17 +11,17 @@
 </head>
 <body class="sm:bg-red-400 md:bg-green-400 lg:bg-purple-400">
 
-    <div id="container" class="container font-Inter bg-slate-700 mx-auto overflow-hidden min-h-[1000px]">
+    <div id="container" class="container font-Inter bg-slate-700 mx-auto overflow-hidden min-h-[1500px]">
 
-        <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 text-slate-100 flex items-center shadow-lg">
-            <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10">JasS</h1>
+        <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 flex items-center shadow-lg">
+            <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10 text-slate-100">JasS</h1>
             <div id="navigasi" class="transition-all duration-1000 opacity-0 font-semibold flex absolute top-0 -right-full h-screen w-4/5 bg-slate-800 flex-col items-center justify-evenly sm:static sm:w-auto sm:h-auto sm:bg-transparent sm:flex-1 sm:justify-around sm:flex-row sm:text-sm sm:opacity-100 sm:transition-none">
-                <h2><a href="#">Home</a></h2>
-                <h2><a href="#">Products</a></h2>
-                <h2><a href="#">About</a></h2>
-                <h2><a href="#">Contact</a></h2>
+                <h2><a href="#" class="text-slate-100">Home</a></h2>
+                <h2><a href="#" class="text-slate-100">Products</a></h2>
+                <h2><a href="#" class="text-slate-100">About</a></h2>
+                <h2><a href="#" class="text-slate-100">Contact</a></h2>
             </div>
-            <div id="menu-toggle" class="flex flex-col justify-between h-5 sm:hidden z-10">
+            <div id="menu-toggle" class="flex flex-col justify-between h-5 sm:hidden z-10 hover:cursor-pointer">
                 <span class="toggle-span origin-top-left spans bg-slate-200"></span>
                 <span class="toggle-span spans bg-slate-200"></span>
                 <span class="toggle-span origin-bottom-left spans bg-slate-200"></span>
@@ -29,35 +29,39 @@
         </div>
 
         <!--  -->
-        <div id="home" class="w-full text-slate-100 capitalize">
+        <div id="home" class="w-full">
             <div id="bg-container" class="w-full h-screen bg-cover bg-center sm:hidden" style="background-image: url(assets/img/1.jpg);">
                 <div class="w-full h-full bg-gradient-to-b from-black/30 from-100%">
                     <div class="w-full p-5 h-full flex flex-col justify-center">
-                        <h1 class="mt-28 text-3xl font-bold text-center">Enhance your look with our latest jackets</h1>
+                        <h1 class="mt-28 text-3xl font-bold text-center text-slate-100">Enhance your look with our latest jackets</h1>
                         <h2 class="text-sm text-center lowercase font-semibold text-slate-300 tracking-tighter">suitable for city adventures</h2>
-                        <button class="px-4 py-2 bg-slate-800 mx-auto block rounded-lg shadow-lg tracking-wider font-bold mt-4 hover:bg-slate-900">Check</button>
+                        <button class="px-4 py-2 bg-slate-800 mx-auto block rounded-lg shadow-lg tracking-wider font-bold mt-4 text-slate-100 hover:bg-slate-900">Check</button>
                     </div>
                 </div>
             </div>
         </div>
         <!--  -->
-        <div id="products" class="w-full text-slate-100 capitalize text-center mt-20 p-3">
-            <h1 class="text-4xl font-black mb-4">Our Products</h1>
-            <div>
-                <h1 class="text-xl font-semibold mb-2">Main Products</h1>
-                <div class="flex items-center">
-                    <div class="w-12 text-4xl cursor-pointer mr-1">&#8592;</div>
-                    <div class="h-40 bg-red-200 flex-1 rounded-lg shadow-xl bg-cover bg-center" style="background-image: url(assets/img/2.jpg);"></div>
-                    <div class="max-w-12 text-4xl cursor-pointer ml-1"> &#8594;</div>
-                </div>
-                <div class="flex justify-center mt-2 flex-wrap">
-                    <div class="w-2 h-2 bg-black rounded-full m-1"></div>
-                    <div class="w-2 h-2 bg-white rounded-full m-1"></div>
-                    <div class="w-2 h-2 bg-white rounded-full m-1"></div>
-                    <div class="w-full text-3xl"><span class="text-green-600">$</span>20</div>
+        <div id="products" class="w-full text-center mt-20 p-3">
+            <h1 class="text-4xl font-black mb-4 text-slate-100">Our Products</h1>
+            <div class="w-full p-2">
+                <h1 class="text-xl font-bold mb-2 w-full text-slate-100">Main Products</h1>
+                <img src="assets/img/2.jpg" alt="" class="w-full h-40 rounded-lg shadow-lg mb-1 object-cover object-center block" loading="lazy">
+                <div class="w-full flex justify-center"><span class="block w-2 h-2 bg-black rounded-full m-1"></span><span class="block w-2 h-2 bg-white rounded-full m-1"></span><span class="block w-2 h-2 bg-white rounded-full m-1"></span></div>
+                <h2 class="text-green-600 text-3xl font-semibold">$20</h2>
+                <div class="w-full flex justify-center"><span class="block text-2xl m-2 rounded-full border border-slate-400 p-1 cursor-pointer text-slate-200">&#8592;</span><span class="block text-2xl m-2 p-1 border border-slate-400 rounded-full cursor-pointer text-slate-200">&#8594;</span></div>
+            </div>
+            <div class="w-full mt-10 p-2">
+                <h1 class="text-slate-100 font-bold text-xl">All Products</h1>
+                <div class="w-full grid grid-cols-2 gap-x-2 gap-y-4 mt-5">
+                    <div class="w-full"><img src="assets/img/2.jpg" alt="Brown Jacket JPG" loading="lazy" class="w-full h-40 object-cover object-center rounded-lg shadow-sm"><h1 class="text-lg font-semibold text-green-600">$20</h1><button class="px-3 py-1 bg-slate-900 text-slate-200 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer">Buy</button></div>
+                    <div class="w-full"><img src="assets/img/3.jpg" alt="Black Jacket JPG" loading="lazy" class="w-full h-40 object-cover object-center rounded-lg shadow-sm"><h1 class="text-lg font-semibold text-green-600">$20</h1><button class="px-3 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer">Buy</button></div>
+                    <div class="w-full"><img src="assets/img/4.jpg" alt="T-shirt JPG" loading="lazy" class="w-full h-40 object-cover object-center rounded-lg shadow-sm"><h1 class="text-lg font-semibold text-green-600">$20</h1><button class="px-3 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer">Buy</button></div>
+                    <div class="w-full"><img src="assets/img/5.jpg" alt="T-shirt JPG" loading="lazy" class="w-full h-40 object-cover object-center rounded-lg shadow-sm"><h1 class="text-lg font-semibold text-green-600">$20</h1><button class="px-3 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer">Buy</button></div>
                 </div>
             </div>
         </div>
+        <!--  -->
+
     </div>
 
     <div class="mb-96"></div>
