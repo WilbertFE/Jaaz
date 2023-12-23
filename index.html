@@ -13,7 +13,7 @@
 
     <div id="container" class="container font-Inter bg-slate-700 mx-auto overflow-hidden min-h-[1500px]">
 
-        <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 flex items-center shadow-lg">
+        <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 flex items-center shadow-lg z-10">
             <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10 text-slate-100">JasS</h1>
             <div id="navigasi" class="transition-all duration-1000 opacity-0 font-semibold flex absolute top-0 -right-full h-screen w-4/5 bg-slate-800 flex-col items-center justify-evenly sm:static sm:w-auto sm:h-auto sm:bg-transparent sm:flex-1 sm:justify-around sm:flex-row sm:text-sm sm:opacity-100 sm:transition-none">
                 <h2><a href="#" class="text-slate-100">Home</a></h2>
@@ -41,26 +41,38 @@
             </div>
         </div>
         <!--  -->
-        <div id="products" class="w-full text-center mt-20 p-3">
-            <h1 class="text-4xl font-black mb-4 text-slate-100">Our Products</h1>
-            <div class="w-full p-2">
-                <h1 class="text-xl font-bold mb-2 w-full text-slate-100">Main Products</h1>
+        <div id="products" class="w-full mt-20">
+            <h1 class="text-4xl font-black mb-4 text-slate-100 text-center">Our Products</h1>
+            <div class="w-full p-5">
+                <h1 class="text-xl font-bold mb-2 w-full text-slate-200 text-center">Main Products</h1>
                 <img src="assets/img/2.jpg" alt="" class="w-full h-40 rounded-lg shadow-lg mb-1 object-cover object-center block" loading="lazy">
                 <div class="w-full flex justify-center"><span class="block w-2 h-2 bg-black rounded-full m-1"></span><span class="block w-2 h-2 bg-white rounded-full m-1"></span><span class="block w-2 h-2 bg-white rounded-full m-1"></span></div>
-                <h2 class="text-green-600 text-3xl font-semibold">$20</h2>
+                <p class="text-slate-100 text-sm font-semibold text-center">Brown Jacket</p>
+                <h2 class="text-green-600 text-3xl font-semibold text-center">$20</h2>
                 <div class="w-full flex justify-center"><span class="block text-2xl m-2 rounded-full border border-slate-400 p-1 cursor-pointer text-slate-200">&#8592;</span><span class="block text-2xl m-2 p-1 border border-slate-400 rounded-full cursor-pointer text-slate-200">&#8594;</span></div>
             </div>
             <div class="w-full mt-10 p-2">
-                <h1 class="text-slate-100 font-bold text-xl">All Products</h1>
+                <h1 class="font-bold text-xl text-slate-200 text-center">All Products</h1>
                 <div class="w-full grid grid-cols-2 gap-x-2 gap-y-4 mt-5">
-                    <div class="w-full"><img src="assets/img/2.jpg" alt="Brown Jacket JPG" loading="lazy" class="w-full h-40 object-cover object-center rounded-lg shadow-sm"><h1 class="text-lg font-semibold text-green-600">$20</h1><button class="px-3 py-1 bg-slate-900 text-slate-200 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer">Buy</button></div>
-                    <div class="w-full"><img src="assets/img/3.jpg" alt="Black Jacket JPG" loading="lazy" class="w-full h-40 object-cover object-center rounded-lg shadow-sm"><h1 class="text-lg font-semibold text-green-600">$20</h1><button class="px-3 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer">Buy</button></div>
-                    <div class="w-full"><img src="assets/img/4.jpg" alt="T-shirt JPG" loading="lazy" class="w-full h-40 object-cover object-center rounded-lg shadow-sm"><h1 class="text-lg font-semibold text-green-600">$20</h1><button class="px-3 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer">Buy</button></div>
-                    <div class="w-full"><img src="assets/img/5.jpg" alt="T-shirt JPG" loading="lazy" class="w-full h-40 object-cover object-center rounded-lg shadow-sm"><h1 class="text-lg font-semibold text-green-600">$20</h1><button class="px-3 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer">Buy</button></div>
+                    <div class="w-full rounded-lg shadow-sm overflow-hidden"><img src="assets/img/2.jpg" alt="Brown Jacket JPG" loading="lazy" class="w-full h-40 object-cover object-center"><p class="text-slate-100 text-sm font-semibold text-center">Brown Jacket</p><h1 class="text-lg font-semibold text-green-600 text-center">$15</h1><button class="px-3 py-1 bg-slate-900 text-slate-200 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer block mx-auto">Buy</button></div>
+                    <div class="w-full rounded-lg shadow-sm overflow-hidden"><img src="assets/img/3.jpg" alt="Black Jacket JPG" loading="lazy" class="w-full h-40 object-cover object-center"><p class="text-slate-100 text-sm font-semibold text-center">Black Jacket</p><h1 class="text-lg font-semibold text-green-600 text-center">$20</h1><button class="px-3 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer block mx-auto">Buy</button></div>
+                    <div class="w-full rounded-lg shadow-sm overflow-hidden"><img src="assets/img/4.jpg" alt="T-shirt JPG" loading="lazy" class="w-full h-40 object-cover object-center"><p class="text-slate-100 text-sm font-semibold text-center">T-Shirts</p><h1 class="text-lg font-semibold text-green-600 text-center">$10</h1><button class="px-3 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer block mx-auto">Buy</button></div>
+                    <div class="w-full rounded-lg shadow-sm overflow-hidden"><img src="assets/img/5.jpg" alt="T-shirt JPG" loading="lazy" class="w-full h-40 object-cover object-center"><p class="text-slate-100 text-sm font-semibold text-center">T-Shirt</p><h1 class="text-lg font-semibold text-green-600 text-center">$15</h1><button class="px-3 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer block mx-auto">Buy</button></div>
                 </div>
             </div>
         </div>
         <!--  -->
+        <div id="about" class="w-full mt-20">
+            <h1 class="text-slate-100 font-black text-4xl text-center">About Us</h1>
+            <div class="mt-3 p-3 flex items-center">
+                <div class="w-1/4 rounded-lg overflow-hidden shadow-lg shadow-slate-400 m-1 h-[250px] hover:cursor-pointer"><img src="assets/img/1.jpg" alt="jacket jpg" loading="lazy" class="w-full h-full object-cover object-center opacity-75"></div>
+                <div class="flex-1 rounded-lg overflow-hidden shadow-lg shadow-slate-400 m-1 h-[300px] hover:cursor-pointer"><img src="assets/img/6.jpg" alt="jacket jpg" loading="lazy" class="w-full h-full object-cover object-center"></div>
+                <div class="w-1/4 rounded-lg overflow-hidden shadow-lg shadow-slate-400 m-1 h-[250px] hover:cursor-pointer"><img src="assets/img/8.jpg" alt="jacket jpg" loading="lazy" class="w-full h-full object-cover object-center opacity-75"></div>
+            </div>
+            <div class="mt-3 p-3">
+                <h1 class="text-center text-slate-100 font-bold text-4xl">Hello World!</h1>
+            </div>
+        </div>
 
     </div>
 
