@@ -9,17 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="bg-slate-700">
+<body class="bg-slate-400 dark:bg-slate-700 dark:text-green-400">
 
     <div id="container" class="container font-Inter mx-auto overflow-hidden">
 
         <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 flex items-center shadow-lg z-10">
-            <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10 text-white sm:text-4xl">Jas<span class="bg-slate-950">S</span></h1>
+            <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10 text-white sm:text-4xl lg:pr-56">Jas<span class="bg-slate-950">S</span></h1>
             <div id="navigasi" class="transition-all duration-1000 opacity-0 font-semibold flex absolute top-0 -right-full h-screen w-4/5 bg-slate-800 flex-col items-center justify-evenly sm:static sm:w-auto sm:h-auto sm:bg-transparent sm:flex-1 sm:justify-between sm:flex-row sm:text-sm sm:opacity-100 sm:transition-none md:justify-around">
-                <h2><a href="#home" class="navbarh1">Home</a></h2>
-                <h2><a href="#products" class="navbarh1">Products</a></h2>
-                <h2><a href="#about" class="navbarh1">About</a></h2>
-                <h2><a href="#contact" class="navbarh1">Contact</a></h2>
+                <div class="flex-1 flex justify-around items-center flex-col sm:flex-row sm:justify-between md:justify-around">
+                    <h2><a href="#home" class="navbarh1">Home</a></h2>
+                    <h2><a href="#products" class="navbarh1">Products</a></h2>
+                    <h2><a href="#about" class="navbarh1">About</a></h2>
+                    <h2><a href="#contact" class="navbarh1">Contact</a></h2>
+                </div>
+                <div class="w-8 h-8 hover:cursor-pointer sm:ml-5 sm:w-7 sm:h-7 md:w-8 md:h-8 md:ml-0" id="modeButton">
+                    <img src="assets/img/mode/light.png" alt="mode.png" class="w-full h-full block" id="modeImg" />
+                </div>
             </div>
             <div id="menu-toggle" class="flex flex-col justify-between h-5 sm:hidden z-10 hover:cursor-pointer">
                 <span class="toggle-span origin-top-left spans bg-slate-200"></span>
@@ -117,7 +122,7 @@
         </div>
         <!--  -->
         <div id="footer" class="mt-20 w-full border-t border-slate-800">
-            <div class="w-full p-5 bg-slate-700 md:grid md:grid-cols-3">
+            <div class="w-full p-5 bg-slate-400 dark:bg-slate-700 md:grid md:grid-cols-3">
                 <div class="w-full">
                     <h1 class="text-slate-100 font-black text-3xl sm:text-4xl lg:text-5xl">Jas<span class="bg-slate-950">S</span></h1>
                     <p class="text-white w-4/5 text-sm font-extralight mt-2 sm:text-base md:mt-5">Jl. Karya No.49 Cinta Damai, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 2901</p>

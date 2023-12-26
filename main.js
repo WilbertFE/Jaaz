@@ -1,4 +1,5 @@
 
+// fitur humburger
 const toggle = document.querySelector('#menu-toggle');
 const navigasi = document.querySelector('#navigasi');
 const spans = document.querySelectorAll('.spans')
@@ -21,3 +22,27 @@ toggle.addEventListener('click', function(){
         toggle.classList.remove('bg-blue-900');
     }, 200);
 });
+
+// fitur mode
+const modeButton = document.querySelector('#modeButton');
+const modeImg = document.querySelector('#modeImg');
+const html = document.querySelector('html');
+modeButton.addEventListener('click', function (){
+    modeButton.classList.toggle('darkMode'); 
+    if(modeButton.classList.contains('darkMode')){
+    html.classList.add('dark');
+    modeImg.src = 'assets/img/mode/night-mode.png';
+    localStorage.setItem('mode', 'dark');
+    } else {
+        modeImg.src ='assets/img/mode/light.png';
+        html.classList.remove('dark');
+        localStorage.removeItem('mode');
+    }
+});
+
+if (localStorage.getItem('mode')){
+    modeButton.classList.add('darkMode');
+    modeImg.src = 'assets/img/mode/night-mode.png';
+    html.classList.add('dark');
+}
+
