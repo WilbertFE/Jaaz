@@ -9,17 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="sm:bg-slate-700 lg:bg-purple-400">
+<body class="bg-slate-700">
 
-    <div id="container" class="container font-Inter mx-auto overflow-hidden bg-slate-700">
+    <div id="container" class="container font-Inter mx-auto overflow-hidden">
 
         <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 flex items-center shadow-lg z-10">
             <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10 text-white sm:text-4xl">Jas<span class="bg-slate-950">S</span></h1>
             <div id="navigasi" class="transition-all duration-1000 opacity-0 font-semibold flex absolute top-0 -right-full h-screen w-4/5 bg-slate-800 flex-col items-center justify-evenly sm:static sm:w-auto sm:h-auto sm:bg-transparent sm:flex-1 sm:justify-between sm:flex-row sm:text-sm sm:opacity-100 sm:transition-none md:justify-around">
-                <h2><a href="#home" class="text-slate-100 sm:text-base">Home</a></h2>
-                <h2><a href="#products" class="text-slate-100 sm:text-base">Products</a></h2>
-                <h2><a href="#about" class="text-slate-100 sm:text-base">About</a></h2>
-                <h2><a href="#contact" class="text-slate-100 sm:text-base">Contact</a></h2>
+                <h2><a href="#home" class="text-slate-100 sm:text-base hover:underline">Home</a></h2>
+                <h2><a href="#products" class="text-slate-100 sm:text-base hover:underline">Products</a></h2>
+                <h2><a href="#about" class="text-slate-100 sm:text-base hover:underline">About</a></h2>
+                <h2><a href="#contact" class="text-slate-100 sm:text-base hover:underline">Contact</a></h2>
             </div>
             <div id="menu-toggle" class="flex flex-col justify-between h-5 sm:hidden z-10 hover:cursor-pointer">
                 <span class="toggle-span origin-top-left spans bg-slate-200"></span>
@@ -57,7 +57,11 @@
             <h1 class="text-4xl font-black mb-4 text-white text-center sm:text-6xl">Our Products</h1>
             <div class="w-full p-5">
                 <h1 class="text-xl font-bold mb-2 w-full text-slate-100 text-center sm:text-4xl">Main Products</h1>
-                <img src="assets/img/2.jpg" alt="" class="w-full h-52 rounded-lg shadow-lg object-cover object-center block sm:h-[300px] sm:mt-3 md:h-[400px]" loading="lazy">
+                <div class="w-full flex items-center mx-auto lg:w-4/5">
+                    <span class="hidden lg:flex justify-center items-center w-10 h-10 border border-slate-300 rounded-full text-slate-100 text-2xl hover:cursor-pointer sm:w-12 sm:h-12 m-3 lg:w-14 lg:h-14">&#8592;</span>
+                    <img src="assets/img/2.jpg" alt="" class="w-full h-52 rounded-lg shadow-lg object-cover object-center block sm:h-[300px] sm:mt-3 md:h-[400px]" loading="lazy">
+                    <span class="hidden lg:flex justify-center items-center w-10 h-10 border border-slate-300 rounded-full text-slate-100 text-2xl hover:cursor-pointer sm:w-12 sm:h-12 m-3 lg:w-14 lg:h-14">&#8594;</span>
+                </div>
                 <div class="w-full flex items-center mt-2">
                     <span class="lg:hidden flex justify-center items-center w-10 h-10 border border-slate-300 rounded-full text-slate-100 text-2xl hover:cursor-pointer sm:w-12 sm:h-12">&#8592;</span>
                     <div class="flex justify-center flex-1">
@@ -82,7 +86,7 @@
         <!--  -->
         <div id="about" class="w-full mt-20">
             <h1 class="text-white font-black text-4xl text-center sm:text-6xl">About Us</h1>
-            <div class="p-3 flex items-center mt-3">
+            <div class="p-3 flex items-center mt-3 lg:w-3/5 mx-auto">
                 <div class="w-1/4 rounded-lg overflow-hidden shadow-lg shadow-slate-400 m-1 h-[250px] hover:cursor-pointer sm:h-[400px]"><img src="assets/img/1.jpg" alt="jacket jpg" loading="lazy" class="w-full h-full object-cover object-center opacity-70"></div>
                 <div class="flex-1 rounded-lg overflow-hidden shadow-lg shadow-slate-400 m-1 h-[300px] hover:cursor-pointer sm:h-[500px]"><img src="assets/img/6.jpg" alt="jacket jpg" loading="lazy" class="w-full h-full object-cover object-center"></div>
                 <div class="w-1/4 rounded-lg overflow-hidden shadow-lg shadow-slate-400 m-1 h-[250px] hover:cursor-pointer sm:h-[400px]"><img src="assets/img/8.jpg" alt="jacket jpg" loading="lazy" class="w-full h-full object-cover object-center opacity-70"></div>
@@ -108,14 +112,14 @@
             <div class="w-full p-5">
                 <h2 class="text-slate-200 text-center font-bold text-xl sm:text-4xl">Location</h2>
                 <p class="text-center text-slate-100">north sumatera, medan</p>
-                <div class="w-full h-40 bg-green-300 mt-5 rounded-lg shadow-sm opacity-50 sm:h-[300px]"><img src="" alt="" loading="lazy"></div>
+                <div class="w-full h-40 mx-auto bg-green-300 mt-5 rounded-lg shadow-sm opacity-50 sm:h-[300px] lg:w-4/5"><img src="" alt="" loading="lazy"></div>
             </div>
         </div>
         <!--  -->
         <div id="footer" class="mt-20 w-full border-t border-slate-800">
             <div class="w-full p-5 bg-slate-700 md:grid md:grid-cols-3">
                 <div class="w-full">
-                    <h1 class="text-slate-100 font-black text-3xl sm:text-4xl">Jas<span class="bg-slate-950">S</span></h1>
+                    <h1 class="text-slate-100 font-black text-3xl sm:text-4xl lg:text-5xl">Jas<span class="bg-slate-950">S</span></h1>
                     <p class="text-white w-4/5 text-sm font-extralight mt-2 sm:text-base md:mt-5">Jl. Karya No.49 Cinta Damai, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 2901</p>
                     <div class="w-2/3 mt-5 flex justify-between items-center md:w-4/5">
                         <div class="w-8 h-8"><a href="https://www.flaticon.com/free-icons/instagram"><img src="assets/img/sosmed/instagram.png" alt="instagram.png" class="w-full h-full"></a></div>
