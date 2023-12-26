@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,10 @@
         <div id="navbar" class="fixed top-0 left-0 right-0 px-5 py-4 bg-slate-800 flex items-center shadow-lg z-10">
             <h1 id="judul" class="text-2xl font-black flex-1 sm:flex-none pr-32 z-10 text-white sm:text-4xl">Jas<span class="bg-slate-950">S</span></h1>
             <div id="navigasi" class="transition-all duration-1000 opacity-0 font-semibold flex absolute top-0 -right-full h-screen w-4/5 bg-slate-800 flex-col items-center justify-evenly sm:static sm:w-auto sm:h-auto sm:bg-transparent sm:flex-1 sm:justify-between sm:flex-row sm:text-sm sm:opacity-100 sm:transition-none md:justify-around">
-                <h2><a href="#home" class="text-slate-100 sm:text-base hover:underline">Home</a></h2>
-                <h2><a href="#products" class="text-slate-100 sm:text-base hover:underline">Products</a></h2>
-                <h2><a href="#about" class="text-slate-100 sm:text-base hover:underline">About</a></h2>
-                <h2><a href="#contact" class="text-slate-100 sm:text-base hover:underline">Contact</a></h2>
+                <h2><a href="#home" class="navbarh1">Home</a></h2>
+                <h2><a href="#products" class="navbarh1">Products</a></h2>
+                <h2><a href="#about" class="navbarh1">About</a></h2>
+                <h2><a href="#contact" class="navbarh1">Contact</a></h2>
             </div>
             <div id="menu-toggle" class="flex flex-col justify-between h-5 sm:hidden z-10 hover:cursor-pointer">
                 <span class="toggle-span origin-top-left spans bg-slate-200"></span>
@@ -35,7 +35,7 @@
                     <div class="w-full p-5 h-full flex flex-col justify-center">
                         <h1 class="mt-28 text-3xl font-bold text-center text-slate-100">Enhance your look with our latest jackets</h1>
                         <h2 class="text-sm text-center lowercase font-semibold text-slate-300 tracking-tighter">suitable for city adventures</h2>
-                        <button class="px-4 py-2 bg-slate-800 mx-auto block rounded-lg shadow-lg tracking-wider font-bold mt-4 text-slate-100 hover:bg-slate-900">Check</button>
+                        <button class="button mt-4">Check</button>
                     </div>
                 </div>
             </div>
@@ -46,46 +46,46 @@
                     <img src="assets/img/7.jpg" alt="jacket.jpg" loading="lazy" class="hidden md:block w-full object-cover object-center h-[300px] rounded-lg shadow-sm lg:h-[150px]">
                 </div>
                 <div class="w-full mt-10 lg:mt-0">
-                    <h1 class="text-center text-5xl text-slate-100 font-black lg:tracking-wider lg:text-6xl">Enhance your look with our latest jackets</h1>
+                    <h1 class="text-center text-5xl text-slate-100 font-black lg:tracking-wider lg:text-5xl xl:text-6xl">Enhance your look with our latest jackets</h1>
                     <h2 class="text-center text-xl text-slate-100 text-opacity-80 lg:text-2xl lg:mt-5 lg:tracking-widest">suitable for city adventures</h2>
-                    <button class="block px-4 py-2 mx-auto bg-slate-950 rounded-lg shadow-sm mt-3 text-slate-100 font-bold tracking-wider text-lg hover:bg-slate-800 lg:text-2xl lg:px-8 lg:py-4 lg:mt-5">Check</button>
+                    <button class="button mt-5 px-6 py-3">Check</button>
                 </div>
             </div>
         </div>
         <!--  -->
         <div id="products" class="w-full mt-20">
-            <h1 class="text-4xl font-black mb-4 text-white text-center sm:text-6xl">Our Products</h1>
+            <h1 class="judul mb-4">Our Products</h1>
             <div class="w-full p-5">
-                <h1 class="text-xl font-bold mb-2 w-full text-slate-100 text-center sm:text-4xl">Main Products</h1>
+                <h1 class="subjudul mb-2">Main Products</h1>
                 <div class="w-full flex items-center mx-auto lg:w-4/5">
-                    <span class="hidden lg:flex justify-center items-center w-10 h-10 border border-slate-300 rounded-full text-slate-100 text-2xl hover:cursor-pointer sm:w-12 sm:h-12 m-3 lg:w-14 lg:h-14">&#8592;</span>
+                    <span class="hidden lg:flex arrow m-3 lg:w-14 lg:h-14">&#8592;</span>
                     <img src="assets/img/2.jpg" alt="" class="w-full h-52 rounded-lg shadow-lg object-cover object-center block sm:h-[300px] sm:mt-3 md:h-[400px]" loading="lazy">
-                    <span class="hidden lg:flex justify-center items-center w-10 h-10 border border-slate-300 rounded-full text-slate-100 text-2xl hover:cursor-pointer sm:w-12 sm:h-12 m-3 lg:w-14 lg:h-14">&#8594;</span>
+                    <span class="hidden lg:flex arrow m-3 lg:w-14 lg:h-14">&#8594;</span>
                 </div>
                 <div class="w-full flex items-center mt-2">
-                    <span class="lg:hidden flex justify-center items-center w-10 h-10 border border-slate-300 rounded-full text-slate-100 text-2xl hover:cursor-pointer sm:w-12 sm:h-12">&#8592;</span>
+                    <span class="lg:hidden arrow">&#8592;</span>
                     <div class="flex justify-center flex-1">
-                        <span class="block w-2 h-2 bg-black rounded-full m-1"></span>
-                        <span class="block w-2 h-2 bg-white rounded-full m-1"></span>
-                        <span class="block w-2 h-2 bg-white rounded-full m-1"></span>
+                        <span class="bulatan bg-black"></span>
+                        <span class="bulatan bg-white"></span>
+                        <span class="bulatan bg-white"></span>
                     </div>
-                    <span class="lg:hidden flex justify-center items-center w-10 h-10 border border-slate-300 rounded-full text-slate-100 text-2xl hover:cursor-pointer sm:w-12 sm:h-12">&#8594;</span></div>
-                <p class="text-slate-100 text-sm font-semibold text-center sm:text-xl">Brown Jacket</p>
-                <h2 class="text-green-600 text-3xl font-semibold text-center">$20</h2>
+                    <span class="lg:hidden arrow">&#8594;</span></div>
+                <p class="namaBarang">Brown Jacket</p>
+                <h2 class="harga text-3xl">$20</h2>
             </div>
             <div class="w-full mt-10 p-2">
-                <h1 class="font-bold text-xl text-slate-200 text-center sm:text-4xl">All Products</h1> 
+                <h1 class="subjudul">All Products</h1> 
                 <div class="w-full grid grid-cols-2 gap-x-2 gap-y-4 mt-5 sm:gap-4 md:grid-cols-3 md:gap-y-8">
-                    <div class="w-full rounded-lg shadow-sm overflow-hidden"><img src="assets/img/2.jpg" alt="Brown Jacket JPG" loading="lazy" class="w-full h-40 object-cover object-center sm:h-96"><p class="text-slate-100 text-sm font-semibold text-center sm:text-2xl">Brown Jacket</p><h1 class="text-lg font-semibold text-green-600 text-center sm:text-2xl">$15</h1><button class="px-4 py-1 bg-slate-900 text-slate-200 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer block mx-auto sm:text-lg sm:mt-2">See More</button></div>
-                    <div class="w-full rounded-lg shadow-sm overflow-hidden"><img src="assets/img/3.jpg" alt="Black Jacket JPG" loading="lazy" class="w-full h-40 object-cover object-center sm:h-96"><p class="text-slate-100 text-sm font-semibold text-center sm:text-2xl">Black Jacket</p><h1 class="text-lg font-semibold text-green-600 text-center sm:text-2xl">$20</h1><button class="px-4 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer block mx-auto sm:text-lg sm:mt-2">See More</button></div>
-                    <div class="w-full rounded-lg shadow-sm overflow-hidden"><img src="assets/img/4.jpg" alt="T-shirt JPG" loading="lazy" class="w-full h-40 object-cover object-center sm:h-96"><p class="text-slate-100 text-sm font-semibold text-center sm:text-2xl">T-Shirts</p><h1 class="text-lg font-semibold text-green-600 text-center sm:text-2xl">$10</h1><button class="px-4 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer block mx-auto sm:text-lg sm:mt-2">See More</button></div>
-                    <div class="w-full rounded-lg shadow-sm overflow-hidden col-start-2"><img src="assets/img/5.jpg" alt="T-shirt JPG" loading="lazy" class="w-full h-40 object-cover object-center sm:h-96"><p class="text-slate-100 text-sm font-semibold text-center sm:text-2xl">T-Shirt</p><h1 class="text-lg font-semibold text-green-600 text-center sm:text-2xl">$15</h1><button class="px-4 py-1 bg-slate-900 text-slate-100 rounded-lg shadow-lg font-bold tracking-wider text-sm hover:bg-slate-800 hover:cursor-pointer block mx-auto sm:text-lg sm:mt-2">See More</button></div>
+                    <div class="imageContainer"><img src="assets/img/2.jpg" alt="Brown Jacket JPG" loading="lazy" class="products"><p class="namaBarang">Brown Jacket</p><h1 class="harga">$15</h1><button class="button">See More</button></div>
+                    <div class="imageContainer"><img src="assets/img/3.jpg" alt="Black Jacket JPG" loading="lazy" class="products"><p class="namaBarang">Black Jacket</p><h1 class="harga">$20</h1><button class="button">See More</button></div>
+                    <div class="imageContainer"><img src="assets/img/4.jpg" alt="T-shirt JPG" loading="lazy" class="products"><p class="namaBarang">T-Shirts</p><h1 class="harga">$10</h1><button class="button">See More</button></div>
+                    <div class="imageContainer col-start-2"><img src="assets/img/5.jpg" alt="T-shirt JPG" loading="lazy" class="products"><p class="namaBarang">T-Shirt</p><h1 class="harga">$15</h1><button class="button">See More</button></div>
                 </div>
             </div>
         </div>
         <!--  -->
         <div id="about" class="w-full mt-20">
-            <h1 class="text-white font-black text-4xl text-center sm:text-6xl">About Us</h1>
+            <h1 class="judul">About Us</h1>
             <div class="p-3 flex items-center mt-3 lg:w-3/5 mx-auto">
                 <div class="w-1/4 rounded-lg overflow-hidden shadow-lg shadow-slate-400 m-1 h-[250px] hover:cursor-pointer sm:h-[400px]"><img src="assets/img/1.jpg" alt="jacket jpg" loading="lazy" class="w-full h-full object-cover object-center opacity-70"></div>
                 <div class="flex-1 rounded-lg overflow-hidden shadow-lg shadow-slate-400 m-1 h-[300px] hover:cursor-pointer sm:h-[500px]"><img src="assets/img/6.jpg" alt="jacket jpg" loading="lazy" class="w-full h-full object-cover object-center"></div>
@@ -98,19 +98,19 @@
         </div>
         <!--  -->
         <div id="contact" class="w-full mt-20">
-            <h1 class="text-white text-center font-black text-4xl sm:text-6xl">Contact</h1>
+            <h1 class="judul">Contact</h1>
             <div class="w-full p-5">
-                <h2 class="text-slate-200 text-center font-bold text-xl sm:text-4xl">Contact Us</h2>
+                <h2 class="subjudul">Contact Us</h2>
                 <form>
                 <div class="w-full m-2"><h1 class="text-slate-100 font-semibold"><label for="nama">Nama :</label></h1><input type="text" id="nama" class="w-full" /></div>
                 <div class="w-full m-2"><h1 class="text-slate-100 font-semibold"><label for="email">Email :</label></h1><input type="email" id="email" class="w-full" /></div>
                 <div class="w-full m-2"><h1 class="text-slate-100 font-semibold"><label for="no">Phone Number :</label></h1><input type="tel" id="no" class="w-full" /></div>
                 <div class="w-full m-2"><h1 class="text-slate-100 font-semibold"><label for="messege">Messege :</label></h1><input type="text" id="messege" class="w-full h-40" /></div>
-                <button type="submit" class="px-4 py-2 bg-slate-500 text-slate-100 rounded-lg shadow-sm m-2 hover:cursor-pointer hover:bg-slate-600">Submit</button>
+                <button type="submit" class="button m-2 sm:my-5">Submit</button>
                 </form>
             </div>
             <div class="w-full p-5">
-                <h2 class="text-slate-200 text-center font-bold text-xl sm:text-4xl">Location</h2>
+                <h2 class="subjudul">Location</h2>
                 <p class="text-center text-slate-100">north sumatera, medan</p>
                 <div class="w-full h-40 mx-auto bg-green-300 mt-5 rounded-lg shadow-sm opacity-50 sm:h-[300px] lg:w-4/5"><img src="" alt="" loading="lazy"></div>
             </div>
@@ -130,18 +130,18 @@
                 </div>
                 <div class="w-full mt-5 md:mt-0">
                     <h1 class="text-slate-100 font-semibold sm:text-lg">Decode Ideas <span class="block">Discover Potential</span></h1>
-                    <a href="#" class="text-slate-100 font-extralight text-xs hover:underline sm:text-sm">Tentang Kami</a>
+                    <a href="#" class="footerNav">Tentang Kami</a>
                 </div>
                 <div class="w-full mt-5 flex md:mt-0">
                     <div class="w-full">
-                        <a href="#" class="text-slate-100 text-xs font-extralight block hover:underline mb-2 sm:text-sm">Blog</a>
-                        <a href="#" class="text-slate-100 text-xs font-extralight block hover:underline mb-2 sm:text-sm">Reward</a>
-                        <a href="#" class="text-slate-100 text-xs font-extralight block hover:underline mb-2 sm:text-sm">Showcase</a>
-                        <a href="#" class="text-slate-100 text-xs font-extralight block hover:underline mb-2 sm:text-sm">Discount</a>
+                        <a href="#" class="footerNav mb-2">Blog</a>
+                        <a href="#" class="footerNav mb-2">Reward</a>
+                        <a href="#" class="footerNav mb-2">Showcase</a>
+                        <a href="#" class="footerNav mb-2">Discount</a>
                     </div>
                     <div class="w-full">
-                        <a href="#" class="text-slate-100 text-xs font-extralight block hover:underline mb-2 sm:text-sm">Hubungi Kami</a>
-                        <a href="#" class="text-slate-100 text-xs font-extralight block hover:underline mb-2 sm:text-sm">FAQ</a>
+                        <a href="#" class="footerNav mb-2">Hubungi Kami</a>
+                        <a href="#" class="footerNav mb-2">FAQ</a>
                     </div>
                 </div>
             </div>

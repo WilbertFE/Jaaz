@@ -6,4 +6,37 @@
     .toggle-span{
         @apply block w-7 h-[3px] rounded-sm transition-all duration-500;
     }
+    .navbarh1 {
+        @apply text-slate-100 sm:text-base hover:underline;
+    }
+    .judul {
+        @apply text-4xl font-black text-white text-center sm:text-6xl;
+    }
+    .subjudul {
+        @apply text-xl font-bold w-full text-slate-200 text-center sm:text-4xl;
+    }
+    .button {
+        @apply px-4 py-2 bg-slate-800 mx-auto block rounded-lg shadow-lg tracking-wider font-bold text-slate-100 hover:bg-slate-900;
+    }
+    .imageContainer {
+        @apply w-full rounded-lg shadow-sm overflow-hidden;
+    }
+    .products {
+        @apply w-full h-40 object-cover object-center sm:h-96;
+    }
+    .namaBarang {
+        @apply text-slate-100 text-sm font-semibold text-center sm:text-2xl;
+    }
+    .harga {
+        @apply text-lg font-semibold text-green-600 text-center sm:text-2xl;
+    }
+    .arrow {
+        @apply flex justify-center items-center w-10 h-10 border border-slate-300 rounded-full text-slate-100 text-2xl hover:cursor-pointer sm:w-12 sm:h-12;
+    }
+    .bulatan {
+        @apply block w-2 h-2 rounded-full m-1;
+    }
+    .footerNav {
+        @apply text-slate-100 font-extralight text-xs hover:underline sm:text-sm block;
+    }
 }
